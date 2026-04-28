@@ -25,7 +25,7 @@ Check the files one by one:
     * The function `get_forward_kinematics` computer the end-effector pose for a given set of joint angles.
     * The functions `Rx`, `Ry`, `Rz` return the rotations of the x, y, z axes for a given angle.
     * The functions `get_gXY` compute the 4×4 homogeneous transform from joint X to joint Y.
-    * In this file, you need to fill the missing displacement and rotations, following the example in the first two functions.
+    * In this file, you need to fill the missing displacement and rotations, following the example in the first two functions, and [this image](https://maegantucker.com/ECE4560/assets/assignment6/FK-info.png).
 * `pick_and_place_mujoco.py` contains:
     * The function `show_cubes` shows the starting and final positions. They should look like the example on the slides if the forward kinematics was implemented correctly.
     * The starting and final configurations.
