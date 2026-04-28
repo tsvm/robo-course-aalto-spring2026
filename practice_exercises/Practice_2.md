@@ -1,4 +1,4 @@
-# Practice 1. Pick-and-place in simulation.
+# Practice 2. Pick-and-place in simulation.
 
 In this exercise, you will implement forward kinematics in with the SO-101 arm in the MuJoCo simulator.
 
