@@ -17,7 +17,21 @@ python -m mujoco.viewer --mjcf=model/scene.xml
 
 ## Implementing pick-and-place in simulation
 
-Download the zip file with the exercise files from MyCourses.
+Download the zip archive with the exercise files from MyCourses, and unarchive them in your project, next to the `model` folder from the previous exercise.
+
+You should have the following file structure:
+
+```
+project_folder/
+├── model/
+│   ├── scene.xml
+│   ├── so101_new_calib.xml
+│   └── assets/
+│       └── (mesh files)
+├── pick_and_place_mujoco.py
+├── so101_forward_kinematics.py
+├── so101_mujoco_utils.py
+```
 
 Check the files one by one:
 * `so101_mujoco_utils.py`: contains functions for initial pose and moving to a new pose. You don't need to do any modifications in this file. 
