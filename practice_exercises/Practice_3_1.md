@@ -34,7 +34,36 @@ You need to do this for both the leader and follower arms separately, and write 
 First, check the calibration video:
 https://huggingface.co/docs/lerobot/en/so101#calibration-video
 
-### Calibrate the follower arm
+
+**You have two options:**
+1. Copy the calibration files uploaded to MyCourses and use them directly. This is easier if you change the robot you work on, which is likely to happen in the course.
+2. Run the calibration as shown below. You will have to do this for each robot you work with.
+
+
+### Copying the calibration files
+
+You can download the file `calibration.zip` and unarchive it in your CACHE folder, under `huggingface/lerobot`
+
+You should have the following files:
+
+```
+$CACHE_DIR
+├── huggingface/
+    ├── lerobot/
+        ├── calibration/
+            ├── robots/
+                ├── so_follower/
+                    ├── r1_follower_arm.json	
+                    ├── r2_follower_arm.json
+            ├── teleoperators/
+                ├── so_leader/
+                    ├── r1_leader_arm.json	
+                    ├── r2_leader_arm.json
+```
+
+### Run calibration
+
+#### Calibrate the follower arm
 
 Connect the follower arm with the USB cable. Execute the following command:
 
@@ -45,7 +74,7 @@ lerobot-calibrate \
     --robot.id=robot_id_follower_arm # <- Give the robot a unique name
 ```
 
-### Calibrate the leader arm
+#### Calibrate the leader arm
 
 Disconnect the follower arm and connect the leader arm. Execute the calibration command for the leader arm.
 
