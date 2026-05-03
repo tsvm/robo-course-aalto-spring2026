@@ -6,7 +6,10 @@ In this exercise you will implement a simple pick and place movement on the SO-1
 
 Your calibration file was saved in your computer CACHE folder.
 
-For example, on Mac, the calibration JSON files are saved in `~/.cache/huggingface/lerobot/calibration/`.
+For example, on Mac, the calibration JSON files are saved in `~/.cache/huggingface/lerobot/calibration/`. 
+
+In Windows, check `C:\Users\YourUsername\.cache\huggingface\lerobot\calibration\` (but it might also be another folder, depending on the version of your Windows OS).
+
 Follower arm calibration files are saved in the subfolder `robots/so_follower`, and the leader arm calibration files -- in folder `teleoperators/so_leader`.
 
 For this exercise **you need to copy the follower arm calibration file to your project folder**.
