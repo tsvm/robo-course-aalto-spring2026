@@ -32,7 +32,7 @@ Information about the dataset format is available [here](https://huggingface.co/
 
 ### How to Get Started
 
-You execute the command with for exmaple the following arguments:
+You execute the command with for example the following arguments:
 
 ```
 lerobot-record \
@@ -44,11 +44,11 @@ lerobot-record \
     --teleop.port=/dev/tty.usbmodem5AB01575131 \
     --teleop.id=r2_leader_arm \
     --display_data=true \
-    --dataset.repo_id=tsvm/move_pizho \
+    --dataset.repo_id=tsvm/move_pizho \ # Change the path!
     --dataset.episode_time_s=10 \
     --dataset.reset_time_s=10 \
     --dataset.num_episodes=5 \
-    --dataset.single_task="Move Pizho to the other pad" \
+    --dataset.single_task="Move Pizho to the other pad" \ # Give youw description of the task
     --dataset.streaming_encoding=true \
     --dataset.encoder_threads=2 \
     --dataset.push_to_hub=false \
