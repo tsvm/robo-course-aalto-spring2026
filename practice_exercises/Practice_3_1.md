@@ -29,6 +29,12 @@ The port is in the format '/dev/tty.usbmodem575E0032081'.
 
 You need to do this for both the leader and follower arms separately, and write down the ports for each one. Remember which port is for which arm.
 
+## Install additional library
+
+```
+pip install "lerobot[feetech]"
+```
+
 ## Calibration
 
 First, check the calibration video:
