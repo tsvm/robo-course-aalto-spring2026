@@ -76,6 +76,21 @@ Several aruguments to pay attention to:
 
 You need to connect the camera with USB.
 
+#### Check if LeRobot sees your camera
+
+Before running the data collection, check if your camera is working with the following command:
+
+```
+lerobot-find-cameras opencv
+```
+
+It should output the available cameras on your computer, an one of them should be the one you connected with USB.
+
+After this command, the images captured for the cameras are saved in `outputs/captured_images`.
+Check if one of the images is for the camera you use for your scene. Check the camera Id from there, and use the same id if the `lerobot-record` command.
+
+#### Pass Camera in the Script
+
 Then pass it to the recording command with the following argument:
 
 `--robot.cameras="{ top: {type: opencv, index_or_path: 0, width: 1920, height: 1080, fps: 30}}"`
