@@ -45,6 +45,7 @@ lerobot-record \
     --teleop.id=r2_leader_arm \
     --display_data=true \
     --dataset.repo_id=your_name/your_dataset \ # Change the path!
+    --dataset.root=/Users/your_user/.cache/huggingface/lerobot/user/data/run_009 \ # full path to where the data from the evaluation will be recorded
     --dataset.episode_time_s=10 \
     --dataset.reset_time_s=10 \
     --dataset.num_episodes=5 \
