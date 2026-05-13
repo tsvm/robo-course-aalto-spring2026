@@ -12,7 +12,9 @@ In this exercise you will evaluate the policy you trained in Practice 5 by runni
 
 ### Overview
 
-Evaluation uses the same `lerobot-record` command as data collection, with one addition: `--policy.path` points to your trained checkpoint. The robot will move autonomously based on what the policy predicts — no teleoperation needed.
+Evaluation uses the same `lerobot-record` command as data collection, with two main changes: 
+* Adding the argument `--policy.path`, which points to your trained checkpoint. The robot will move autonomously based on what the policy predicts — no teleoperation needed.
+* Using only the follower arm. Leader arm is not needed for running the evaluation.
 
 The evaluation run also records the episodes, so you can review what the robot did afterward.
 
