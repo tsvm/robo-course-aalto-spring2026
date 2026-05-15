@@ -28,6 +28,7 @@ lerobot-record \
     --robot.cameras="{ top: {type: opencv, index_or_path: 0, width: 1920, height: 1080, fps: 30}}" \
     --display_data=true \
     --dataset.repo_id=your_name/eval_your_dataset \
+    --dataset.root=/Users/user/.cache/huggingface/lerobot/user/dataset/run_001 \ # This is the absolute path to the data folder
     --resume=true \
     --dataset.single_task="Your task description" \
     --dataset.streaming_encoding=true \
